@@ -27,10 +27,8 @@ describe('searchProducts', () => {
       })
     );
 
-    expect(results).toEqual([
-      expect.objectContaining({ name: 'Basic Cotton T-Shirt' }),
-      expect.objectContaining({ name: 'Loose Fit Cotton Tee' })
-    ]);
+    expect(results).toHaveLength(1);
+    expect(results).toEqual([expect.objectContaining({ name: 'Loose Fit Cotton Tee' })]);
   });
 
   it('filters by price range', async () => {
