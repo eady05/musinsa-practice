@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Cotton T-Shirt",
+    "brand": "MUSINSA",
+    "category": "top",
+    "price": 19000,
+    "tags": ["basic", "cotton", "daily"],
+    "stock": 12
+  },
+  {
+    "id": 2,
+    "name": "Oversized Hoodie",
+    "brand": "MUSINSA STANDARD",
+    "category": "top",
+    "price": 39000,
+    "tags": ["hoodie", "winter", "oversized"],
+    "stock": 5
+  },
+  {
+    "id": 3,
+    "name": "Slim Fit Denim",
+    "brand": "MUSINSA",
+    "category": "bottom",
+    "price": 59000,
+    "tags": ["denim", "slim"],
+    "stock": 0
+  },
+  {
+    "id": 4,
+    "name": "Daily Sneakers",
+    "brand": "MUSINSA",
+    "category": "shoes",
+    "price": 79000,
+    "tags": ["daily", "sneakers"],
+    "stock": 7
+  },
+  {
+    "id": 5,
+    "name": "Loose Fit Cotton Tee",
+    "brand": "MUSINSA",
+    "category": "top",
+    "price": 21000,
+    "tags": ["cotton", "basic", "loose"],
+    "stock": 4
+  }
+]
