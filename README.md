@@ -1,52 +1,17 @@
-# Musinsa Search & Recommend API (Next.js)
+# Musinsa Monorepo
 
-## Requirements
-- Node.js 18+
+## Structure
+- `next` Next.js app
+- `fastapi` FastAPI app (template structure)
 
-## Setup
-```bash
-npm install
-```
-
-## Run
-```bash
-npm run dev
-```
-
-## API
-
-### Search
-`GET /api/search?keyword=musinsa&category=top&minPrice=10000&maxPrice=30000&tags=basic,cotton`
-
-Response:
-```json
-[
-  {
-    "id": 1,
-    "name": "Basic Cotton T-Shirt",
-    "brand": "MUSINSA",
-    "price": 19000,
-    "tags": ["basic", "cotton", "daily"]
-  }
-]
-```
-
-### Recommend
-`GET /api/recommend/1`
-
-Response:
-```json
-[
-  {
-    "id": 5,
-    "name": "Loose Fit Cotton Tee",
-    "brand": "MUSINSA",
-    "similarityScore": 0.73
-  }
-]
-```
+## Quick Start
+- Web dev server: `./scripts/dev-web.sh`
+- API dev server: `./scripts/dev-api.sh`
 
 ## Tests
-```bash
-npm test
-```
+- Web tests: `./scripts/test-web.sh`
+- API tests: `./scripts/test-api.sh`
+
+## API Setup
+- Install deps: `python -m venv .venv && source .venv/bin/activate && pip install -r fastapi/requirements.txt`
+- Health check: `GET /api/v1/health`
